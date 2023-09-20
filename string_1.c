@@ -1,4 +1,7 @@
 /**
+ * my-strcat - strcat
+ * @dest: dest
+ * @src: src
  *
  */
 #include "main.h"
@@ -19,6 +22,12 @@ char *my_strcat(char *dest, const char *src)
 
     return (original_dest);
 }
+/*
+ * my_strncmp - strncmp
+ * @str1: str
+ * @str2: str2
+ * @n: n
+ */
 int my_strncmp(const char *str1, const char *str2, size_t n)
 {
     while (n-- > 0)
@@ -33,6 +42,9 @@ int my_strncmp(const char *str1, const char *str2, size_t n)
     return (0);
 }
 /**
+ * my_strchr - strchr
+ * @str: str
+ * @ch: ch
  */
 char *my_strchr(const char *str, int ch)
 {
@@ -45,6 +57,8 @@ char *my_strchr(const char *str, int ch)
     return (NULL);
 }
 /**
+ * _strlen - strlen
+ * @str: str
  */
 size_t _strlen(const char *str)
 {
@@ -56,6 +70,9 @@ size_t _strlen(const char *str)
   return (i);
 }
 /**
+ * my_strstr - strstr
+ * @haystack: haystack
+ * @needle: needle
  */
 char *my_strstr(const char *haystack, const char *needle)
 {
