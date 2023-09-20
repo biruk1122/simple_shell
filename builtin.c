@@ -11,13 +11,13 @@ int builtin_command(char *buffer, char **args, char **av)
                 free(buffer);
                 return (0);
         }
-    if (my_strcmp(args[0], "exit") == 0)
+    if (my_strstr(args[0], "exit")!= NULL)
     {
         free(buffer);
         free_array_string(args);
-        exit(0);
+        exit(EXIT_SUCCESS);
     }
-    else if (my_strcmp(args[0], "env") == 0)
+    else if (my_strstr(args[0], "env") != NULL)
     {
             while (env[i] != NULL)
             {
@@ -28,7 +28,7 @@ int builtin_command(char *buffer, char **args, char **av)
             }
         return (1);
     }
-    else if (my_strcmp(args[0], "cd") == 0)
+    else if (my_strstr(args[0], "cd") != NULL)
         {
                 if (args[1] == NULL)
                         chdir(customized_getenv("HOME"));
