@@ -1,5 +1,7 @@
 #include "main.h"
 /**
+ * customized_getenv - getenv
+ * @name: name
  */
 char *customized_getenv(const char *name)
 {
@@ -21,6 +23,8 @@ char *customized_getenv(const char *name)
     return (NULL);
 }
 /**
+ * user_command - user
+ * @args: args
  *
  */
 char *user_command(char *args)
@@ -71,6 +75,11 @@ char *user_command(char *args)
     return (NULL);
 }
 /**
+ * full_command - cmd
+ * @get_path: path
+ * @args: args
+ * @av: av
+ * @env: env
  *
  */
 
