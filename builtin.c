@@ -1,4 +1,10 @@
 #include "main.h"
+/*
+ * builtin_command - builtin command
+ * @buffer: buffer cmd
+ * @args: args
+ * @av: av
+ */
 int builtin_command(char *buffer, char **args, char **av)
 {
         char **env = environ;
