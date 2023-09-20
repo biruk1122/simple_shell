@@ -1,11 +1,15 @@
 #include "main.h"
 /**
+ * _putchar - putchar
+ * @c: c
  */
 int _putchar(char c)
 {
   return (write(1, &c, 1));
 }
 /**
+ * _printf - printf
+ * @format: format
  */
 int _printf(const char *format, ...)
 {
@@ -67,6 +71,8 @@ void err_msg(char *args, char *av, int k)
     _printf(": %s: not found\n", args);
 }
 /**
+ * hash_tag - tag
+ * @buffer: buffer
  */
 void hash_tag(char *buffer)
 {
