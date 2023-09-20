@@ -1,100 +1,89 @@
 #include "main.h"
 /**
- * _putchar - the putchar func
- * @c: char c
- * Return: to return
  */
 int _putchar(char c)
 {
-	return (write(1, &c, 1));
+  return (write(1, &c, 1));
 }
 /**
- * _printf - the printf customized
- * @format: the format func
- * Return: to return
  */
 int _printf(const char *format, ...)
 {
-	va_list args;
-	int i = 0, count = 0;
+        va_list args;
+        int i = 0, count = 0;
 	char *str;
 
 	va_start(args, format);
 
-	while (format[i] != '\0')
-	{
-		if (format[i] == '%')
-		{
-			i++;
-			if (format[i] == 's')
-			{
-				str = va_arg(args, char *);
+    while (format[i] != '\0')
+    {
+        if (format[i] == '%')
+        {
+            i++;
+            if (format[i] == 's')
+            {
+                str = va_arg(args, char *);
 
-				while (*str != '\0')
-				{
-					count += _putchar(*str);
-					str++;
-				}
-			}
-		}
-		else
-		{
-			count += _putchar(format[i]);
-		}
-		i++;
-	}
-	va_end(args);
-	return (count);
+                while (*str != '\0')
+                {
+                    count += _putchar(*str);
+                    str++;
+                }
+            }
+        }
+        else
+        {
+            count += _putchar(format[i]);
+        }
+        i++;
+    }
+    va_end(args);
+    return (count);
 }
 /**
  * err_msg - error message
  * @args: input string
  * @av: comand argument
  * @k: int value
- * Void: the void func
  */
 void err_msg(char *args, char *av, int k)
 {
-	int input = k;
-	char val;
+        int input = k;
+        char val;
 
-	_printf("%s: ", av);
-	if (k < 10)
-	{
-		val = k + '0';
-		_putchar(val);
-	}
-	else if (k > 9 && k < 100)
-	{
-		val = (k / 10) + '0';
-		_putchar(val);
-		val = (input % 10) + '0';
-		_putchar(val);
-	}
-	_printf(": %s: not found\n", args);
+        _printf("%s: ", av);
+        if (k < 10)
+        {
+                val = k + '0';
+                _putchar(val);
+        }
+        else if (k > 9 && k < 100)
+        {
+                val = (k / 10) + '0';
+        _putchar(val);
+        val = (input % 10) + '0';
+        _putchar(val);
+    }
+    _printf(": %s: not found\n", args);
 }
 /**
- * hash_tag - the hash tag
- * @buffer: the buffer
- * Void: the void func
  */
 void hash_tag(char *buffer)
 {
-	size_t j = 0;
+        size_t j = 0;
 
-	for (; buffer[j] != '\0'; j++)
-	{
-		if (buffer[j] == '#' && (j == 0 || buffer[j - 1] == ' '))
-		{
-			while (buffer[j] != '\0' && buffer[j] != '\n')
-			{
-				buffer[j] = ' ';
-				j++;
-			}
-			if (buffer[j] == '\n')
-			{
-				j--;
-			}
-		}
-	}
+        for (; buffer[j] != '\0'; j++) {
+        if (buffer[j] == '#' && (j == 0 || buffer[j - 1] == ' '))
+        {
+            while (buffer[j] != '\0' && buffer[j] != '\n')
+            {
+                buffer[j] = ' ';
+                j++;
+            }
+            if (buffer[j] == '\n')
+            {
+                j--;
+            }
+        }
+    }
 }
