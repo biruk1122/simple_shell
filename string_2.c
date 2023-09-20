@@ -1,6 +1,9 @@
 #include <stddef.h>
 #include "main.h"
 /**
+ * _strcpy - strcpy
+ * @dest: dest
+ * @src: src
  */
 char *_strcpy(char *dest, const char *src)
 {
@@ -11,6 +14,8 @@ char *_strcpy(char *dest, const char *src)
     return (dst);
 }
 /**
+ * _srtdup - strdup
+ * @s: s
  */
 
 char *_strdup(const char *s)
@@ -30,6 +35,9 @@ char *_strdup(const char *s)
     return (copy);
 }
 /**
+ * _strcat - strcat
+ * @dest: dest
+ * @src: src
  */
 char *_strcat(char *dest, const char *src)
 {
@@ -43,7 +51,11 @@ char *_strcat(char *dest, const char *src)
 	    ;
     return (dst);
 }
-
+/*
+ * my_strcmp - srccmp
+ * @s1: s1
+ * @s2: s2
+ */
 int my_strcmp(const char *s1, const char *s2)
 {
 
