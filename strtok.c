@@ -1,5 +1,7 @@
 #include "main.h"
 /**
+ * trim_newline - trim newline
+ * @str: str
  */
 void trim_newline(char *str)
 {
@@ -11,6 +13,9 @@ void trim_newline(char *str)
     }
 }
 /**
+ * my_strtok - strtok
+ * @str: str
+ * @delim: delim 
  *
  */
 char *my_strtok(char *str, const char *delim)
