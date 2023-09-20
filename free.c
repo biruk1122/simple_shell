@@ -1,4 +1,8 @@
 #include "main.h"
+/*
+ * free_array_string - string
+ * @array: array
+ */
 
 
 void free_array_string(char **array)
