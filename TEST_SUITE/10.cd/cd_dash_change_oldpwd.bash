@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ################################################################################
 # Description for the intranet check (one line, support Markdown syntax)
 # Set the variable `OLDPWD` to `/tmp` and execute `cd -`
