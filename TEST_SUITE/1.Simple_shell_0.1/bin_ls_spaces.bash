@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ################################################################################
 # Description for the intranet check (one line, support Markdown syntax)
 # Execute `/bin/ls` 4 times (surrounded by spaces)
