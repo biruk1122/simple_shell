@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ################################################################################
 # Description for the intranet check (one line, support Markdown syntax)
 # Cd to `/tmp`, then to `dev` and execute `cd -`
