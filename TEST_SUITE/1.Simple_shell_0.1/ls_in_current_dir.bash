@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ################################################################################
 # Description for the intranet check (one line, support Markdown syntax)
 # Copy the file /bin/ls to `hbtn_ls` (in the current directory) and execute `./hbtn_ls /var`
