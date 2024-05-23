@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ################################################################################
 # Description for the intranet check (one line, support Markdown syntax)
 # Spaces only (medium)
