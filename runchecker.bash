@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ORANGE='\033[0;33m'
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
